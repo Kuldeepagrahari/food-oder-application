@@ -3,7 +3,7 @@ import "./footer.css"
 import { assets } from '../assets/assets'
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer' id='footer'>
       <div className="footer-1">
         <img src={assets.logo} alt="" />
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, laborum! Est illum voluptates atque, ab commodi soluta eligendi nam vitae sunt! Animi, nisi voluptates perspiciatis commodi dicta qui libero assumenda.</p>
@@ -16,6 +16,7 @@ const Footer = () => {
 
         </div>
       </div>
+      <div className="right">
       <div className="footer-2">
         <h2>Company</h2>
         <ul>
@@ -30,7 +31,7 @@ const Footer = () => {
         <p>+1-212-456-7890</p>
         <p>contactTomato.com</p>
       </div>
-    </div>
+    </div></div>
   )
 }
 

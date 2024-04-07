@@ -7,6 +7,7 @@ import PlaceOrder from './pages/place order/placeOrder'
 import Cart from './pages/cart/cart'
 import SignIn from './signIn/signIn'
 import AboutUs from './pages/aboutUs/aboutUs'
+import LogOut from './pages/logout/logout'
 const App = () => {
 
   const [showLogin, setshowLogin] = useState(false);
@@ -24,8 +25,9 @@ const App = () => {
         <Route path="/" element={<Home/>}></Route>
         <Route path="/cart" element={<Cart/>}></Route> <Route path="/order" element={<PlaceOrder/>}></Route>
         <Route path="/about-us" element={<AboutUs/>}></Route>
+        <Route path="/logout" element={<LogOut/>}></Route>
       </Routes>
-     
+      
     </div>
     </>
   )

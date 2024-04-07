@@ -9,7 +9,7 @@ const Header = () => {
             Lets Order Your Favourite Food !
         </h2>
         <p>we know the power of mother's hand food , so we serve the food with love to match that little much! </p>
-        <button>view Menu</button>
+        <button ><a href="#exploreMenu"></a>view Menu</button>
       </div>
     </div>
   )

@@ -3,6 +3,7 @@ import "./navbar.css"
 import { assets } from '../assets/assets'
 import { Link } from 'react-router-dom'
 import { StoreContext } from '../context/storeContext'
+import ExploreMenu from './exploreMenu/exploreMenu'
 const Navbar = ({ setshowLogin }) => {
   const {getTotalCartAmount} = useContext(StoreContext)
 
@@ -14,8 +15,8 @@ const Navbar = ({ setshowLogin }) => {
         <img src={assets.logo} alt="logo" className='logo' /></a>
       <ul className="nav-menu">
         <li><Link to="/">home</Link></li>
-        <li><a src="#Explore Our Menu">menu</a></li>
-        <li>contact us</li>
+        <li><a href="#exploreMenu">menu</a></li>
+        <li><a href="#footer">contact us</a></li>
         <li><a href="/about-us">about us</a></li>
       </ul>
       <div className="nav-right">
