@@ -8,8 +8,8 @@ const Header = () => {
         <h2>
             Lets Order Your Favourite Food !
         </h2>
-        <p>we know the power of mother's hand food , so we serve the food with love to match that little much! </p>
-        <button ><a href="#exploreMenu"></a>view Menu</button>
+        <p><i> Delight in Simple Dining: Order with Ease and Enjoy Delicious Meals Delivered Straight to You. Experience Convenience and Flavor in Every Bite. </i></p>
+        <button><a href="#exploreMenu">View Menu</a></button>
       </div>
     </div>
   )

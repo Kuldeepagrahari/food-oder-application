@@ -1,14 +1,19 @@
 .header {
-    background-image: url("/header_img.png");
+    background-image: url("https://media.istockphoto.com/id/953140058/photo/cooking-nd-seasoning-spices-border-on-black-slate-background.webp?b=1&s=170667a&w=0&k=20&c=8Vmnl8mHhMmc2WvnEEj0RDajvg75bizccWzrTXIh2z8=");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 1020px 500px;
     position: relative;
+    border-radius: 10px;
 
     height: 34vw;
     margin: 30px auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     /* padding: 5vh 5vh; */
 
 }
+
 
 .header-content {
     position: absolute;
@@ -17,8 +22,9 @@
     align-items: start;
     gap: 1.5vw;
     max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
+    bottom: 20%;
+    left: 19vw;
+    top:10vh;
     animation: fadeIn 3s;
 
     /* padding: 5vh 5vw; */
@@ -33,22 +39,25 @@
 }
 
 .header-content p {
-    color: rgb(247, 245, 245);
+    color: white;
     font-size: 2vw;
-    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px black;
+    /* background-color: rgb(178, 175, 175); */
 
 }
 
 .header-content button {
     border: none;
-    color: #747474;
-    font-weight: 500;
+    color: white;
+    font-weight: 1000;
     padding: 1vw 2.3vw;
-    background-color: white;
+    background-color:tomato;
     font-size: max(1vw, 13px);
     border-radius: 50px;
     width: 15vw;
     height: 3vh;
+    border: 2px solid tomato;
 
     display: flex;
     align-items: center;

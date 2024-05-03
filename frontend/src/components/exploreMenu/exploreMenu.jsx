@@ -7,7 +7,7 @@ const ExploreMenu = ({category,setCategory}) => {
       <h1>Explore Our Menu</h1>
 
       <p className='emploreMenu-text'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit corrupti magnam optio reiciendis facilis alias aliquam eum voluptatibus aliquid laboriosam quae perspiciatis similique maiores cumque, provident est iure? Rerum?
+      Satisfy your cravings with our diverse menu, featuring a tantalizing array of dishes from around the world. From hearty burgers to fresh salads and flavorful pastas, there's something to please every palate
       </p>
 
       <div className="exploreMenu-list">

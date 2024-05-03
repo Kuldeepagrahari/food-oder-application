@@ -1,12 +1,14 @@
 import React, { useContext } from 'react'
 import "./navbar.css"
 import { assets } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { StoreContext } from '../context/storeContext'
 import ExploreMenu from './exploreMenu/exploreMenu'
+import { useAuth } from '../context/auth-context'
 const Navbar = ({ setshowLogin }) => {
   const {getTotalCartAmount} = useContext(StoreContext)
-
+   const {IsLoggedin} = useAuth()
+   console.log("login" + IsLoggedin)
   return (
 
    
@@ -25,7 +27,9 @@ const Navbar = ({ setshowLogin }) => {
           <div className={getTotalCartAmount()===0?"":"dot"}></div>
 
         </div>
-        <button onClick={() => setshowLogin(true)}>Sign In</button>
+        {IsLoggedin? <button> <NavLink to = "/logout"> Sign Out</NavLink></button>:
+      
+        <button onClick={() => setshowLogin(true)}>Sign In</button>}
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ export const AuthContext = createContext()
 export const AuthProvider = ({children}) => {
 
     const  [token,settoken] = useState(localStorage.getItem("token"))
-     
+     let IsLoggedin = !!token
 
     const storeTokenInLS = ( token ) =>{
          return localStorage.setItem('token', token)
@@ -17,7 +17,7 @@ export const AuthProvider = ({children}) => {
        settoken("")
        return localStorage.removeItem("token")
     }
-    return <AuthContext.Provider value={{storeTokenInLS,LogOutUser}} >
+    return <AuthContext.Provider value={{IsLoggedin,storeTokenInLS,LogOutUser}} >
         {children}
     </AuthContext.Provider>
 
