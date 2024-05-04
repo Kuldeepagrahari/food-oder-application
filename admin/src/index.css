@@ -23,3 +23,12 @@ hr {
   height: 1px;
   background-color: #a9a9a9;
 }
+
+.app-content {
+  display: flex;
+}
+
+.sidebar-option img{
+  width: 35px;
+  margin-right: 10px;
+}
